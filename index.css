@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f5f7fa; /* fundo claro e suave */
+    background-color: #f5f7fa; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Área principal com a imagem e os textos */
+
 .minhafoto {
     margin-top: 100px;
     margin-right: 150px;
@@ -22,7 +22,7 @@ body {
     gap: 40px;
 }
 
-/* Foto de perfil */
+
 .foto {
     width: 250px;
     height: 250px;
@@ -32,14 +32,14 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Nome do usuário */
+
 #pedro {
     font-size: 30px;
     font-family: Arial, sans-serif;
     color: #333;
 }
 
-/* Descrição abaixo do nome */
+
 .sobre {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -54,7 +54,6 @@ body {
     margin-top: 20px;
 }
 
-/* Estilo base das abas */
 #aba1, #aba2, #aba3, #aba4 {
     padding: 15px 25px;
     border-radius: 30px;
@@ -179,4 +178,41 @@ p {
 
 #gmail {
     background-color: #ffcc80;
+}
+
+@media (max-width: 768px) {
+  .minhafoto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .foto {
+    width: 180px;
+    height: 180px;
+  }
+
+  #pedro {
+    font-size: 24px;
+  }
+
+  .abas, .tabelas {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #aba1, #aba2, #aba3, #aba4,
+  #academia, #futebol, #volei,
+  #jardim, #fundamental, #medio, #linguas,
+  #insta, #zap, #gmail {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  a:link {
+    font-size: 16px;
+  }
 }
